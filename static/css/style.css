@@ -1,6 +1,5 @@
 *{
-    margin: 20px;
-    
+    margin: 0px;
     padding: 0;
     box-sizing: border-box;
 }
@@ -10,6 +9,7 @@ body{
     flex-direction: column;
     align-items: center;
     text-align: center;
+    
 }
 .top{
     width: 100%;
@@ -19,7 +19,7 @@ body{
     justify-content: space-around;
     align-items: center;
     /* background-color: #bf79a2; */
-    background-color: #f5f5f5;
+    background-color: #3d48c2;
     position: sticky;
     position: fixed;
 }
@@ -49,11 +49,35 @@ body{
     transition: 2ms ease-in;
     border-bottom: 2px solid #bf79a2;
 }
+
 .middle{
     width: 80%;
-    margin-top: 150px;
+    margin-top: 78px;
     background-color: red;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+
+}
+.mall{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
 }
 .middle .gif{
-    width: 300px;
+    width: 100%;
+}
+.middle .gif img{
+    width: 100%;
+}
+.middle .middlefirst{
+    width: 69.7%;
+    background-color: #3d48c2;
+
+
+}
+.middle .middlesecond{
+    width: 29.7%;
+    background-color: #7076b5;
 }
