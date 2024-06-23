@@ -15,16 +15,16 @@ class coursemodule(models.Model):
 class questions(models.Model):
     question = models.TextField(max_length=5000)
     modulecode = models.ForeignKey("coursemodule",on_delete= models.CASCADE)
-    choice_1= models.TextField(max_length= 1000)
-    choice_2= models.TextField(max_length= 1000)
-    choice_3= models.TextField(max_length= 1000)
-    choice_4= models.TextField(max_length= 1000)
-    choice_5= models.TextField(max_length= 1000)
-    choice_6= models.TextField(max_length= 1000)
-    wrong_7= models.TextField(max_length= 1000)
-    wrong_8= models.TextField(max_length= 1000)
-    wrong_9= models.TextField(max_length= 1000)
-    wrong_10= models.TextField(max_length= 1000)
+    choice_1= models.TextField(max_length= 1000,null=True)
+    choice_2= models.TextField(max_length= 1000,null=True)
+    choice_3= models.TextField(max_length= 1000,null=True)
+    choice_4= models.TextField(max_length= 1000,null=True)
+    choice_5= models.TextField(max_length= 1000,null=True)
+    choice_6= models.TextField(max_length= 1000,null=True)
+    wrong_7= models.TextField(max_length= 1000,null=True)
+    wrong_8= models.TextField(max_length= 1000,null=True)
+    wrong_9= models.TextField(max_length= 1000,null=True)
+    wrong_10= models.TextField(max_length= 1000,null=True)
     def _str_(self):
         return self.question
     

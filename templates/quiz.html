@@ -9,6 +9,24 @@
 <body>
     <section class="middlequiz">
         middle
+        <form action="" method="post">
+            {% csrf_token %}
+        {{ form.as_p }}
+
+        <input type="submit" value="POST QUESTION">
+        </form>
+
+        <div class="questiondiv">
+              <ol> {% for a in questions %}
+
+                   <li>{{ a.question}}
+                    <br>  <input type="radio" value="{{a.choise_1}}">{{a.choice_2}} <br>
+                    <br>  <input type="radio" value="{{a.choise_1}}">{{a.choice_3}} <br>
+                </li>
+          
+            {% endfor %}  fd
+        </ol>
+        </div>
     </section>
 </body>
 </html>
