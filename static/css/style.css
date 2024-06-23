@@ -18,8 +18,7 @@ body{
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    /* background-color: #bf79a2; */
-    background-color: #3d48c2;
+    background-image: linear-gradient(to right,#071952,#3d48c2 ) ;
     position: sticky;
     position: fixed;
 }
@@ -82,3 +81,10 @@ body{
     background-color: #7076b5;
     color: red;
 } 
+
+.footer{
+    width: 100%;
+    color:#EBF4F6; 
+    background-color: #071952;
+
+}
